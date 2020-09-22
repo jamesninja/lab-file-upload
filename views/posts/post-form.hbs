@@ -1,0 +1,8 @@
+<h1>Submit a new post {{userInSession.username}}</h1>
+<form action="/new-post/{{userId}}" method="POST" enctype="multipart/form-data">
+  <label>Content<input type="textarea" name="content"></label>
+  <label>Author<input type="text" name="creatorId" value="{{userInSession.username}}"></label>
+  <label>Post image<input type="file" name="image" id="post-image" />
+  </label>
+  <button>Submit</button>
+</form>

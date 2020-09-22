@@ -1,2 +1,12 @@
 <h1>{{title}}</h1>
-<p>Welcome Ironhacker!</p>
+<p>Welcome to IronTumbler</p>
+<div class="post-grid">
+  {{#each posts}}
+  <div class="post-container">
+    <img src="{{this.picPath}}">
+    <p>{{this.content}}</p>
+    <p>Author : {{this.creatorId.username}}</p>
+    <a href="/post/{{this.id}}">See more</a>
+  </div>
+  {{/each}}
+</div>
