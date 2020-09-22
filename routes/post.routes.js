@@ -41,10 +41,9 @@ router.post('/new-post/', fileUploader.single('image'), (req, res, next) => {
 });
 
 router.get('/post/:id', (req, res, next) => {
-  Post.findOne({
-      id: req.params.id
+  Post.findById({
+      _id: req.params.id
     })
-    .populate('creatorId')
     .then(post => {
       console.log(post);
       res.render('posts/post-detail', {

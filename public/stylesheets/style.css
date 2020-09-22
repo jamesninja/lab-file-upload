@@ -120,12 +120,12 @@ ul li {
 }
 
 .post-grid {
-display: grid;
-grid-template-columns: 200px 200px;
+  display: grid;
+  grid-template-columns: 200px 200px;
 }
 
 .post-container {
-  width: 50px;
+  width: 150px;
 }
 
 .post-container img {
